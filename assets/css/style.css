@@ -114,11 +114,17 @@ p {
     line-height: 24px;
 }
 
-img {
-    margin: 12px 10px 0 0;
-    margin-top: 10px;   
+img.profile-pic {
+    margin-top: 30px; 
+    height: 100px;
+    width: 100px;
     float: left;
+    background: #4aaaa5;
+    margin-right: 15px;
+    shape-outside: circle();
+    clip-path: circle();
 }
+
 
 .clearfix:after {
     content: '';
@@ -328,3 +334,66 @@ hr {
   .hero-text p {
       color: #fff;
   }
+
+
+
+
+/*************************
+    MEDIA QURIES
+**************************/
+@media screen and (max-width: 568px) {
+    #logo {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 24px;
+        text-align: center;
+        background-color: #fff;
+        color: #4aaaa5;
+        text-shadow: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 15px auto; 
+        float: none;
+        text-align: center; 
+    }
+
+    a.active {
+        border-bottom: none;
+    }
+    
+    i {
+        visibility: hidden;
+    }
+
+    h2 {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+
+    .contact {
+        margin-left: 10px;
+    }
+
+    form {
+        width: 95%;
+    }
+    
+    .picture-wrapper .image-tabs, img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .image-tabs p {
+        width: 100%;
+        top: 72%;
+    }
+
+    .landingPara {
+        visibility: hidden;
+    }
+
+}

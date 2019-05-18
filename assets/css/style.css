@@ -123,6 +123,7 @@ img.profile-pic {
     margin-right: 15px;
     shape-outside: circle();
     clip-path: circle();
+    border-radius: 50%; 
 }
 
 

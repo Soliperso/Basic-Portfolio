@@ -432,6 +432,10 @@ hr {
         right: 2%;
     }
 
+    main {
+        margin-bottom: 0;
+    }
+
 }
 
 /* Landscap Mode */

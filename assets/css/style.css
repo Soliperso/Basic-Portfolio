@@ -340,8 +340,10 @@ hr {
 
 
 /*************************
-    MEDIA QURIES
+    MEDIA QURRIES
 **************************/
+
+/* Portrait Mode */
 @media screen and (max-width: 568px) {
     #logo {
         width: 90%;
@@ -398,3 +400,51 @@ hr {
     }
 
 }
+
+/* Landscap Mode */
+@media only screen and (orientation: landscape) {
+    i {
+        visibility: hidden;
+    }
+    #logo {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 24px;
+        text-align: center;
+        background-color: #fff;
+        color: #4aaaa5;
+        text-shadow: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 15px auto; 
+        float: none;
+        text-align: center; 
+    }
+
+    h2 {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    a.active {
+        border-bottom: none;
+    }
+    .image-tabs p {
+        width: 100%;
+        top: 72%;
+    }
+
+    .picture-wrapper .image-tabs, img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .contact {
+        margin-left: 10px;
+    }
+
+
+  }

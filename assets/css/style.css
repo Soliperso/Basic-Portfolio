@@ -140,6 +140,9 @@ img.profile-pic {
 /*************************
     FORM
 **************************/
+fieldset {
+    color: #bbb;
+}
 form {
     width: 600px;
     margin: auto;

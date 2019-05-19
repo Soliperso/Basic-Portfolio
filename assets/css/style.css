@@ -337,8 +337,30 @@ hr {
   }
 
 
-
-
+/*************************
+    Go top button
+**************************/
+#myBtn {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    display: block;
+    background-color: #4aaaa5;
+    border-radius: 50%;
+    color: rgb(204, 204, 204);
+    right: 12%;
+    bottom: 80px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(204, 204, 204);
+    color: #4aaaa5;
+  }
 /*************************
     MEDIA QURRIES
 **************************/
@@ -347,7 +369,7 @@ hr {
 @media screen and (max-width: 568px) {
     #logo {
         width: 90%;
-        margin: 10px auto;
+        margin: 0 auto 10px;
         font-size: 24px;
         text-align: center;
         background-color: #fff;
@@ -399,16 +421,24 @@ hr {
         visibility: hidden;
     }
 
+    header {
+        background-color: #fafafa;
+    }
+
+    #myBtn {
+        right: 2%;
+    }
+
 }
 
 /* Landscap Mode */
-@media only screen and (orientation: landscape) {
+@media (max-width: 568px), handheld and (orientation: landscape) {
     i {
         visibility: hidden;
     }
     #logo {
         width: 90%;
-        margin: 10px auto;
+        margin: 0 auto 10px;
         font-size: 24px;
         text-align: center;
         background-color: #fff;
